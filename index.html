@@ -38,7 +38,7 @@
     <section>
       <div class="baner-grey">
         <h1 class="hero">Effective Solutions for Your Business</h1>
-        <button type="button"  class="button">Order Service</button>
+        <button type="button" data-modal-open  class="button">Order Service</button>
       </div>
     </section>
     <section class="section">
@@ -305,6 +305,15 @@
           </ul>
         </div>
     </section>
+    <section data-modal class="is-hidden backdrop">
+        <div class="modal-box">
+            <button type="button" data-modal-close class="btn-close">
+                <svg class="btn-close-sign" >
+                    <use href="./images/icons.svg#icon-close-black-18dp" ></use>
+                </svg>                  
+            </button>
+        </div>
+    </section>
     </main>
     <footer class="dark-footer">
         <div class="container">
@@ -347,5 +356,6 @@
             </div>
         </div>
     </footer>
+    <script src="./js/modal.js" type="module"></script>
 </body>
 </html>
